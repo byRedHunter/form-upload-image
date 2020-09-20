@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TodoTrabajo || byRedHunter</title>
+
+		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<main class="publicar--empleo">
+			<section class="main__info">
+				<div class="main__info--content">
+					<h1 class="content-h1">¿Que esperas?</h1>
+					<p class="content-p">
+						Publica tus empleos y elige a la persona que quieras que lo
+						resuelva.
+					</p>
+				</div>
+			</section>
+
+			<section class="main__form">
+				<h2 class="main__form--title">Publicar Empleo</h2>
+
+				<form action="#" class="" enctype="multipart/form-data">
+					<div class="form-group">
+						<label for="title">Titulo</label>
+						<input
+							type="text"
+							name="title"
+							id="title"
+							placeholder="Titulo de publicación"
+						/>
+					</div>
+
+					<div class="form-group">
+						<label for="description">Descripción</label>
+						<textarea
+							name="description"
+							id="description"
+							placeholder="Describe tu empleo"
+							name="description"
+						></textarea>
+					</div>
+
+					<div class="form-file">
+						<div class="form-file__action">
+							<label for="image" class="title">Foto de publicación</label>
+
+							<input type="file" name="image" id="image" />
+						</div>
+						<div class="form-file__result" id="result-image">
+							<img id="img-result" alt="" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="form-button">Publicar</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
